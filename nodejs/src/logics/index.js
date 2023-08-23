@@ -11,14 +11,14 @@ export function createForest(data) {
 }
 
 export function countBorderTrees(forest) {
-    const [width, length] = getForestSize(forest)
+    const [width, length] = getForestDimension(forest)
 
     return (width * 2) + ((length - 2) * 2)
 }
 
 export function countVisibleTree(forest) {
     const inverseForest = createInverseForest(forest)
-    const [width, length] = getForestSize(forest)
+    const [width, length] = getForestDimension(forest)
     const offsetX = BORDER_WIDTH
     const offsetY = BORDER_WIDTH
 
@@ -59,7 +59,7 @@ function isTreeVisible(currentTreeHeight, surroundedTrees) {
     return surroundedTrees.some(height => height < currentTreeHeight)
 }
 
-function getForestSize(forest) {
+function getForestDimension(forest) {
     return [forest.length, forest[0].length]
 }
 
