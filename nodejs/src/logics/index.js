@@ -10,7 +10,7 @@ export function createForest(data) {
         )
 }
 
-export function countBorderTrees(forest) {
+export function countBorderTree(forest) {
     const [width, length] = getForestDimension(forest)
 
     return (width * 2) + ((length - 2) * 2)

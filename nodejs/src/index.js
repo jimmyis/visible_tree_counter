@@ -1,7 +1,7 @@
 import { readDataFile } from "./libs/file.js"
 import {
     createForest,
-    countBorderTrees,
+    countBorderTree,
     countVisibleTree
 } from "./logics/index.js"
 
@@ -11,7 +11,7 @@ function main() {
     readDataFile(dataFilePath)
     .then(data => {
         const forest = createForest(data)
-        const borderCount = countBorderTrees(forest)
+        const borderCount = countBorderTree(forest)
         const visibleCount = countVisibleTree(forest)
 
         console.log(borderCount + visibleCount)
