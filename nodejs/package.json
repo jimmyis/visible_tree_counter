@@ -1,0 +1,25 @@
+{
+  "name": "visible_tree_counter",
+  "version": "0.1.0",
+  "description": "A counter for visible trees in a rectangular forest.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jimmyis/visible_tree_counter.git"
+  },
+  "keywords": [
+    "Jimmyis",
+    "CodeAssessment"
+  ],
+  "author": "Jimmyis <me@jimmyis.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimmyis/visible_tree_counter/issues"
+  },
+  "homepage": "https://github.com/jimmyis/visible_tree_counter#readme"
+}
